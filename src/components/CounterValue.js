@@ -9,7 +9,6 @@ const CounterValue = ({
   setIsSpin = () => {},
   showAlert = () => {},
 } = {}) => {
-  console.log("countLimit=", countLimit);
   const validateCounter = (count) => {
       return count <= 1000;
     },
@@ -32,7 +31,6 @@ const CounterValue = ({
             setIsSpin(false);
           }
         );
-      setCountLimit(value);
     };
   return (
     <>
